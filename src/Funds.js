@@ -56,30 +56,7 @@ export default function FundList() {
   }
 
   const FundDelete = (id) => {
-    // let data =
-    // {
-    //   "fund_id": 50
-    //   // "fund_name": "Fund ThreeThousand",
-    //   // "fund_inception_date": "2021-07-16",
-    //   // "fund_manager": {
-    //   //   "fund_manager_id": "mjones@thefundone.com",
-    //   //   "fund_manager_name": "Mick Jones",
-    //   //   "fund_manager_phone": "555-555-5555",
-    //   //   "fund_manager_mail_address": "mjones@thefundone.com",
-    //   //   "fund_manager_birth_date": "1970-01-01"
-    //   // }
-    // }
-    //  fetch('http://132.145.210.248:8080/captain/funds/50', {
-    //   method: "DELETE"
-      // headers: {
-      //   Accept: 'application/form-data',
-      //   'Content-Type': 'application/json',
-      // },
-      // body: JSON.stringify(data)
-    // })
-    // .then(res => console.log(res))
-
-    fetch("http://132.145.210.248:8080/captain/funds/43", {
+    fetch("http://132.145.210.248:8080/captain/funds/" + id, {
       // headers: {
       //   // Accept: "application/json",
       //   "Access-Control-Allow-Methods": "DELETE"
@@ -87,7 +64,7 @@ export default function FundList() {
       method: "DELETE",
       
     })
-
+    .then(res => console.log(res))
     // .then(
     //   (result) => {
     //     alert(result['message'])

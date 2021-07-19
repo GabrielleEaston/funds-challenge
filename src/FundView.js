@@ -21,7 +21,7 @@ export default function FundView() {
   const [fund, setFund] = useState();
   useEffect(() => {
     GetOneFund(id)
-  }, [])
+  }, [id])
   const GetOneFund = (id) => {
      fetch("http://132.145.210.248:8080/captain/funds/"+id)
       .then(res => res.json())
