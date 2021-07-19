@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function UserList() {
+export default function FundList() {
   const classes = useStyles();
 
   const [funds, setFunds] = useState([]);
@@ -50,7 +50,10 @@ export default function UserList() {
         }
       )
   }
-
+  
+  const ViewFund = id => {
+    window.location = '/view/'+id
+  }
 
   const FundDelete = (id) => {
     // let data =
@@ -120,6 +123,7 @@ export default function UserList() {
               <TableRow>
                 <TableCell align="right">ID</TableCell>
                 <TableCell align="left">Fund Name</TableCell>
+                <TableCell align="left">Fund Inception Date</TableCell>
                 <TableCell align="left">Fund Manager</TableCell>
                 <TableCell align="left">Phone Number</TableCell>
                 <TableCell align="left">Email</TableCell>
@@ -133,13 +137,15 @@ export default function UserList() {
                 <TableRow key={idx}>
                   <TableCell align="right">{idx + 1}</TableCell>
                   <TableCell align="left">{fund.fund_name}</TableCell>
+                  <TableCell align="left">{fund.fund_inception_date}</TableCell>
                   <TableCell align="left">{fund.fund_manager.fund_manager_name}</TableCell>
                   <TableCell align="left">{fund.fund_manager.fund_manager_phone}</TableCell>
                   <TableCell align="left">{fund.fund_manager.fund_manager_mail_address}</TableCell>
                   <TableCell align="left">{fund.fund_manager.fund_manager_birth_date}</TableCell>
                   <TableCell align="center">
                     <ButtonGroup color="primary" aria-label="outlined primary button group">
-                      <Button onClick={() => FundDelete(fund.fund_id)}>Del</Button>
+                      <Button onClick={() => FundDelete(fund.fund_id)}>Delete</Button>
+                      <Button onClick={() => ViewFund(fund.fund_id)}>View</Button>
                     </ButtonGroup>
                   </TableCell>
                 </TableRow>
