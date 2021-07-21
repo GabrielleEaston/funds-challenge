@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><a href="https://www.netlify.com/" target="_blank" rel="nofollow">The Funds</a> 📆</h1>
+  <h1>Funds</h1>
   <strong>Built by Gabrielle </strong>
 </div>
 
@@ -15,7 +15,7 @@ React front-end that lists the existing Funds that are stored in a database and 
 ### Swagger Funds API documentation
 
 <div align="center">
-  <h1><a href="https://app.swaggerhub.com/apis/GabrielleEaston/Funds-API/1.0.0" target="_blank" rel="nofollow">The Funds API Documentation</a> 📆</h1>
+  <h1><a href="https://app.swaggerhub.com/apis/GabrielleEaston/Funds-API/1.0.0" target="_blank" rel="nofollow">The Funds API Documentation</a></h1>
 </div>
 
 
