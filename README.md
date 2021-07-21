@@ -7,15 +7,17 @@
 
 React front-end that lists the existing Funds that are stored in a database and are accessible through a REST API, see the details of a specific Fund and allow inserting a new Fund <br />
 
+<h2>Details</h2>
+
 - Lists all funds 
 - View one fund
 - Create a new fund
-- Delete a fund
+- Delete a fund (*DELETE request is blocked at the moment*)
 
 ### Swagger Funds API documentation
 
-<div align="center">
-  <h1><a href="https://app.swaggerhub.com/apis/GabrielleEaston/Funds-API/1.0.0" target="_blank" rel="nofollow">The Funds API Documentation</a></h1>
+<div>
+  <h2><a href="https://app.swaggerhub.com/apis/GabrielleEaston/Funds-API/1.0.0" target="_blank" rel="nofollow">The Funds API Documentation</a></h2>
 </div>
 
 
@@ -30,5 +32,5 @@ If you run into any problems installing the app locally or have any questions, p
 
 <hr />
 
-**Gabrielle Easton**
+**Gabrielle Easton** *Web developer*
 [Linkedin](https://www.linkedin.com/in/gabrielle-easton/) | [Website](https://gabrielle-easton.dev) | [GitHub](https://github.com/GabrielleEaston)
