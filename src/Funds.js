@@ -133,6 +133,5 @@ export default function FundList() {
         </Paper>
       </Container>
     </div>
-    
   );
 }
