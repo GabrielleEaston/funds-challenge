@@ -58,22 +58,9 @@ export default function FundList() {
 
   const FundDelete = (id) => {
     fetch("http://132.145.210.248:8080/captain/funds/" + id, {
-      // headers: {
-      //   // Accept: "application/json",
-      //   "Access-Control-Allow-Methods": "DELETE"
-      // },
       method: "DELETE",
-      
     })
     .then(res => console.log(res))
-    // .then(
-    //   (result) => {
-    //     alert(result['message'])
-    //     if (result['status'] === 'ok') {
-    //       FundsGet();
-    //     }
-    //   }
-    // )
   }
 
   

@@ -7,6 +7,8 @@
 
 React front-end that lists the existing Funds that are stored in a database and are accessible through a REST API, see the details of a specific Fund and allow inserting a new Fund <br />
 
+Styling implemented with <a href="https://material-ui.com/" target="_blank" rel="nofollow">Material UI</a>
+
 <h2>Details</h2>
 
 - Lists all funds 
