@@ -51,8 +51,7 @@ export default function FundView() {
         }
       )
   }
-  
-  return (
+    return (
     <Container maxWidth="xs">
       <div className={classes.paper}>
         <Typography component="h1" variant="h5">
